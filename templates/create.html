@@ -1,0 +1,30 @@
+{%extends "template.html"%}
+{%block title%}Create Data Produk{%endblock%}
+
+{%block content%}
+  <h1>Create Data Produk</h1>
+    <a href="" class="btn btn-success">Kembali</a>
+   <div class="row">
+        <div class="col">
+            <form method="POST" action="">
+                <div class="form-group">
+                  <label for="namaproduk">Nama Produk</label>
+                  <input type="email" class="form-control" id="namaproduk" placeholder="Masukkan nama produk" name="nama" required>
+                </div>
+                <div class="form-group">
+                  <label for="keterangan">Keterangan</label>
+                  <input type="text" class="form-control" id="keterangan" placeholder="Deskripsi Prouk" name="keterangan" required>
+                </div>
+                <div class="form-group">
+                    <label for="harga">Harga</label>
+                    <input type="number" class="form-control" id="harga" placeholder="Harga Produk" name="harga" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah" placeholder="Jumlah Produk" name="jumlah" required>
+                </div>
+                <button type="submit" class="btn btn-success">Kirim</button>
+              </form>
+        </div>
+   </div>
+{%endblock%}
